@@ -111,6 +111,39 @@
 				</div>
 			  </div> 
 
+			  <div class="row contentbox-12" id="muenning">
+				<div class="alignleft" style="height: auto;">
+				  <div class="col-lg-2">
+					  <article>
+						  <div class="post-image">
+							  {{=IMG(_src=URL('static','images/catalog/preview.png'),_style='width:230px')}}
+						  </div>
+					  </article>
+				  </div>
+				  <div class="col-lg-9">
+					  <article>
+						  <div class="post-heading">
+							  <b>Martin Roth, Hiroshi Yoshida, Martin Picard {{=T('(Eds.)')}}<br />
+								Japan's contemporary media culture between local and global: content, practice and theory</b>
+								{{if session.forced_language =='de': }}							  
+								<p>This collection features a wide range of inquiries into Japan’s contemporary media culture, situating popular media content and its related practices and theories in the complex interplay between local and global. The chapters draws attention to several prominent phenomena, suggest new approaches to media culture, and highlight the importance of positionality with regard to research on media culture. The volume documents the results of a series of PhD student workshops held in Kyoto and Leipzig between 2017 and 2019, and continues the discussions started there.
+								</p>
+								{{elif session.forced_language =='en': }}
+								<p>This collection features a wide range of inquiries into Japan’s contemporary media culture, situating popular media content and its related practices and theories in the complex interplay between local and global. The chapters draws attention to several prominent phenomena, suggest new approaches to media culture, and highlight the importance of positionality with regard to research on media culture. The volume documents the results of a series of PhD student workshops held in Kyoto and Leipzig between 2017 and 2019, and continues the discussions started there.</p>
+								{{pass}}								
+						  </div>
+						  <p>
+							{{if session.forced_language =='de': }}
+							  Erscheint im Winter 2021/2022
+							  {{elif session.forced_language =='en': }}
+							  Forthcoming in Winter 2021/2022
+							  {{pass}}
+						  </p>
+					  </article>
+				  </div>
+				</div>
+			  </div>			  
+
             
 		<div class="row">
 			<div  id="vorschau_reihen" class="col-lg-12">
