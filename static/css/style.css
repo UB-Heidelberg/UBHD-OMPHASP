@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	width: 88.571em;
 	max-width: 88.571em;
-	background-color: #f6f6f6;
+	background-color: #fff;
 }
 #content .container {
 	width: 100%;
@@ -273,10 +273,7 @@ select.selectmenu {
 /* --- box --- */
 .box {
 	width: 100%;
-	border: 1px solid #e8e6e1;
-	border-radius: 5px;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.05) inset;
-	background-color: #fff;
+	background-color: #f8f8f8;;
 }
 .box-gray {
 	padding: 20px 20px 30px;
@@ -353,12 +350,11 @@ a[href^="https://doi.org/10.11588"] {
 	float: left;
 }
 #innerder  .navbar-nav > li > a {
-	^M    padding-bottom: 2px;
-	^M    padding-top: 1px;
-	^M    margin-left: 2px;
-	^M    line-height: 30px;
-	^M        font-weight: 700;
-	^M
+    padding-bottom: 2px;
+	padding-top: 1px;
+	margin-left: 2px;
+	line-height: 30px;
+	font-weight: 700;
 }
 -headline ul.breadcrumb li {
 	margin-bottom: 0;
