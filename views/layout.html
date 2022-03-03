@@ -209,45 +209,27 @@
 			<div class="container">
 				<div class="row">
 					<div class="footer_logo_col">
-					  {{if session.forced_language=='de':}}
-					  <span class="footer_logo_beschreibung_ub">Ein Dienst der</span>
-					  {{elif session.forced_language=='en':}}
-					  <span class="footer_logo_beschreibung_ub">A service of</span>
-					  {{pass}}
-					  <div id="footer_logo_ub" class="widget"><a href="http://www.ub.uni-heidelberg.de" title="Homepage Universitätsbibliothek Heidelberg"><img alt="Logo - Universitätsbibliothek Heidelberg" src="{{=URL('static','/images/press/LogoUBH.png')}}" /></a></div>
+					  <div id="footer_logo_ub" class="widget"><a href="http://www.ub.uni-heidelberg.de" title="Homepage Universitätsbibliothek Heidelberg"><img alt="Logo - Universitätsbibliothek Heidelberg" src="{{=URL('static','/images/press/logo_ubhd.png')}}" /></a></div>
 					</div>
 
 
 					<div class="footer_logo_col">
-					   <div id="footer_logo_sai" class="widget"><a href="http://www.sai.uni-heidelberg.de/" title="Deutsche Forschungsgesellschaft"><img alt="Logo - Südasieninstitut" src="{{=URL('static','/images/press/LogoSAI.png')}}" /></a></div>
+					   <div id="footer_logo_sai" class="widget"><a href="http://www.sai.uni-heidelberg.de/" title="Südasieninstitut"><img alt="Logo - Südasieninstitut" src="{{=URL('static','/images/press/logo_sai.png')}}" /></a></div>
 					</div>
 
 
 					<div class="footer_logo_col">
-					  {{if session.forced_language=='de':}}
-					  <span class="footer_logo_beschreibung_sb">In Zusammenarbeit mit</span>
-					  {{elif session.forced_language=='en':}}
-					  <span class="footer_logo_beschreibung_sb">In cooperation with</span>
-					  {{pass}}
-					   <div id="footer_logo_sbb" class="widget"><a href="http://staatsbibliothek-berlin.de/" title="Homepage Staatsbibliothek zu Berlin"><img alt="Logo - CrossAsia" src="{{=URL('static','/images/press/LogoSBB.png')}}" /></a></div>
+					   <div id="footer_logo_sbb" class="widget"><a href="https://www.fid4sa.de" title="Homepage FID4SA"><img alt="Logo - FID4SA" src="{{=URL('static','/images/press/logo_fid4SA_de.png')}}" /></a></div>
 					</div>
 
 					<div class="footer_logo_col">
-					  {{if session.forced_language=='de':}}
-					  <span class="footer_logo_beschreibung_xa">Partner von</span>
-					  {{elif session.forced_language=='en':}}
-					  <span class="footer_logo_beschreibung_xa">Partner of</span>
-					  {{pass}}
-					<div id="footer_logo_xasia" class="widget"><a href="http://crossasia.org/" title="Homepage CrossAsia"><img alt="Logo - CrossAsia" src="{{=URL('static','/images/press/xasia_footer_logo.png')}}" /></a></div>
-					</div>
-
-					<div class="footer_logo_col">
-					  {{if session.forced_language=='de':}}
-					  <span class="footer_logo_beschreibung_dfg">Gefördert durch</span>
-					  {{elif session.forced_language=='en':}}
-					  <span class="footer_logo_beschreibung_dfg">Supported by</span>
-					  {{pass}}
-					   <div id="footer_logo_dfg" class="widget"><a href="http://www.dfg.de/" title="Homepage Deutsche Forschungsgemeinschaft"><img alt="Logo - CrossAsia" src="{{=URL('static','/images/press/dfg_logo.png')}}" /></a></div>
+					   <div id="footer_logo_dfg" class="widget"><a href="http://www.dfg.de/" title="Homepage Deutsche Forschungsgemeinschaft">
+						   {{if session.forced_language=='de':}}
+						   <img alt="Logo - CrossAsia" src="{{=URL('static','/images/press/logo_dfg_de.png')}}" /></a>
+						   {{elif session.forced_language=='en':}}
+						   <img alt="Logo - CrossAsia" src="{{=URL('static','/images/press/logo_dfg_en.png')}}" /></a>
+						   {{pass}}
+					   </div>
 					</div>
 				</div>
 			</div>	
