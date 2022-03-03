@@ -174,7 +174,7 @@ header ul.nav li ul li a {
 	text-shadow: none;
 }
 .navbar .nav a:hover {
-	background-color: transparent;
+	background-color: #e8e8e8;
 	color: #bf0001;
 }
 
@@ -1303,7 +1303,7 @@ footer a:hover {
 	color: #b41815;
 }
 .nav > li > a:hover {
-	background-color: none !important;
+	background-color: transparent !important;
 }
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 	color: #0077bb;
