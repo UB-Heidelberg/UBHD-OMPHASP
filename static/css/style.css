@@ -118,25 +118,25 @@ header .navbar {
 	min-height: 0;
 }
 .dropdown-menu li a:hover {
-	color: #000;
+	color: #bf0001;
 }
 header .nav .caret {
-	border-bottom-color: #f5f5f5;
-	border-top-color: #f5f5f5;
+	border-bottom-color: #bf0001;
+	border-top-color: #bf0001;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	background-color: #f6f6f6;
-	color: #b41815;
+	background-color: transparent;
+	color: #bf0001;
 }
 .navbar-nav li.open a.dropdown-toggle {
-	background-color: #f6f6f6 !important;
+	background-color: transparent !important;
 }
 .navbar-default .navbar-nav > li > a:hover {
-	background-color: #f6f6f6 !important;
+	background-color: transparent !important;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	background-color: #f6f6f6;
-	color: #b41815;
+	background-color: transparent;
+	color: #bf0001;
 }
 .dropdown-menu {
 	box-shadow: none;
@@ -162,7 +162,7 @@ header ul.nav li {
 header ul.nav li a {
 	font-size: 12px;
 	border: none;
-	font-weight: 700;
+	font-weight: 500;
 	text-transform: uppercase;
 }
 header ul.nav li ul li a {
@@ -180,12 +180,12 @@ header ul.nav li ul li a {
 }
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover {
 	background: none;
-	font-weight: 700;
+	font-weight: 500;
 }
 .navbar .nav > .active > a:active, .navbar .nav > .active > a:focus {
 	background: none;
 	outline: 0;
-	font-weight: 700;
+	font-weight: 500;
 }
 .navbar .nav li .dropdown-menu {
 	z-index: 2000;
