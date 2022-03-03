@@ -239,13 +239,7 @@ select.selectmenu {
 	max-width: 100%;
 	height: auto;
 }
-.contentbox-12 {
-	background-color: #fff;
-	border: 1px solid #e8e6e1;
-	border-radius: 5px;
-	padding: 15px;
-	margin-bottom: 20px;
-}
+
 .news-row {
 	margin: 0 -30px 20px -30px;
 }
