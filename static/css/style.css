@@ -292,11 +292,11 @@ select.selectmenu {
 	text-align: center;
 }
 .box-bottom a {
-	color: #9d1512;
+	color: #bf0001;
 	font-weight: 700;
 }
 .box-bottom a:hover {
-	color: #9d1512;
+	color: #bf0001;
 	text-decoration: none;
 }
 
@@ -613,7 +613,7 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
 /* Button-Leiste auf Buchseite */
 
 .summary > .btn-group:first-child > .btn.btn-default:first-child {
-  background: #9d1512;
+  background: #bf0001;
 }
 
 .summary > .btn-group:first-child > .btn.btn-default:first-child > a {
