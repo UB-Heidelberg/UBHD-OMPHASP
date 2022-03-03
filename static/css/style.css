@@ -168,7 +168,6 @@ header ul.nav li a {
 header ul.nav li ul li a {
 	font-size: 12px;
 	border: none;
-	text-transform: uppercase;
 }
 .navbar .nav > li > a {
 	color: #bf0001;
@@ -180,7 +179,7 @@ header ul.nav li ul li a {
 }
 
 .navbar .nav li:hover {
-	background-color: #e8e8e8;
+	background-color: transparent;
 	color: #bf0001;
 }
 
@@ -291,7 +290,6 @@ select.selectmenu {
 .box-bottom {
 	padding: 10px 0;
 	text-align: center;
-	border-top: 1px solid #ddd;
 }
 .box-bottom a {
 	color: #9d1512;
@@ -1305,7 +1303,7 @@ footer a:hover {
 	color: #b41815;
 }
 .nav > li > a:hover {
-	background-color: #f6f6f6 !important;
+	background-color: none !important;
 }
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 	color: #0077bb;
