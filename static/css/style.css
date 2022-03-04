@@ -43,6 +43,14 @@ h1, h2, h3, h4, h5, h6 {
 	max-width: 88.571em;
 	background-color: #fff;
 }
+
+.book_container, .series_container {
+	background-color: #f8f8f8;
+	border: 1px solid #e8e6e1;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 20px;
+}
 #content .container {
 	width: 100%;
 }
