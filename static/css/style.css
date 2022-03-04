@@ -222,6 +222,7 @@ ul.nav li.dropdown a {
 select.selectmenu {
 	display: none;
 }
+.navbar-collapse.collapse {max-height:100%;}
 /* ===================================8. Section:Content==================================== */
 .row {
 	margin: 0px -10px;
