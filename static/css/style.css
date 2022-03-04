@@ -555,6 +555,19 @@ ul.portfolio-categ li.active a:hover, ul.portfolio-categ li a:hover, ul.portfoli
 .top-wrapper {
 	margin-bottom: 20px;
 }
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #bf0001;
+  border-color: #bf0001;
+  cursor: default;
+}
+
+.pagination > li > a, .pagination > li > span {
+  color: #bf0001;
+}
+
 /* ===============================13. Elements================================ */
 /* --- blockquote --- */
 blockquote {
@@ -2119,16 +2132,5 @@ img {
 	float: left !important;
 	margin-left: 0 !important;
 }
-	
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-  z-index: 2;
-  color: #fff;
-  background-color: #bf0001;
-  border-color: #bf0001;
-  cursor: default;
-}
-
-.pagination > li > a, .pagination > li > span {
-  color: #bf0001;
-}
+		
 }
