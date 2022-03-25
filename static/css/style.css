@@ -1363,6 +1363,13 @@ ul.social-network li {
 #sub-footer ul.social-network {
 	float: right;
 }
+
+.footer-flex {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5em;	
+}
+
 /* =============================== Live preview purpose================================ */
 /* --- buttons --- */
 .bs-docs-example {
