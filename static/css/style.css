@@ -1366,7 +1366,7 @@ ul.social-network li {
 
 .footer-flex {
 	display: flex;
-	flex-wrap: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 1.5em !important;	
 }
