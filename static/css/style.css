@@ -1366,8 +1366,9 @@ ul.social-network li {
 
 .footer-flex {
 	display: flex;
+	flex-wrap: flex;
 	justify-content: space-between;
-	margin-top: 1.5em;	
+	margin-top: 1.5em !important;	
 }
 
 /* =============================== Live preview purpose================================ */
