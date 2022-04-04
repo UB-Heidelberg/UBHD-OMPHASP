@@ -30,7 +30,7 @@
       <link rel="stylesheet" href="{{=URL('static','css/font-awesome.min.css' )}}" />
 
 
-   
+
   <!-- end -->
 
     <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
@@ -38,7 +38,7 @@
 
 
     <!-- All JavaScript at the bottom, except for Modernizr which enables
-         HTML5 elements & feature detects --> 
+         HTML5 elements & feature detects -->
     <script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>
     <!--[if lt IE 9]>
         <script src="{{=URL('static','js/respond-1.4.2.min.js')}}"></script>
@@ -71,10 +71,10 @@
 						<ul class="nav nav-pills pull-right">
 							<li><a href="{{=URL('contact','index')}}" style="padding-right: 0;">{{=T('Contact')}}</a></li>
                       {{if session.forced_language =='de': }}
-              <li><a href="https://www.uni-heidelberg.de/datenschutzerklaerung_web.html" style="padding-right: 0;">{{=T('Privacy Notice')}}</a></li>  
+              <li><a href="https://www.uni-heidelberg.de/datenschutzerklaerung_web.html" style="padding-right: 0;">{{=T('Privacy Notice')}}</a></li>
                       {{elif session.forced_language =='en': }}
-              <li><a href="https://www.uni-heidelberg.de/privacypolicy_web.html" style="padding-right: 0;">{{=T('Privacy Notice')}}</a></li>    
-            {{pass}}               
+              <li><a href="https://www.uni-heidelberg.de/privacypolicy_web.html" style="padding-right: 0;">{{=T('Privacy Notice')}}</a></li>
+            {{pass}}
 							<li><a href="{{=URL('contact','imprint')}}" style="padding-right: 0;">{{=T('Legal Notice')}}</a></li>
 							 {{if session.forced_language=='en':}}
 							<li><a href="{{=request.url}}?lang=de" style="padding-left: 10px;">DE</a></li>
@@ -84,15 +84,15 @@
 						</ul>
 			   </div>
 		   </div>
- 
+
 		   <div id="headerLogo" class="print-url">
 			   <div class="container">
 					<a href="http://crossasia.org/" title="Homepage Crossasia.org">
           <img alt="" id="heiup-logo" class="screen" src="{{=URL('static','images/press/schriftzug_header.png')}}" /></a>
 					<img alt="" id="heiup-logo-print" class="print" src="{{=URL('static','images/press/schriftzug_header.png')}}" />
 			   </div>
-           </div>		 		  
-			   
+           </div>
+
 		   <div class="navbar navbar-default navbar-static-top">
 				<div class="container">
 					<div class="navbar-header">
@@ -101,7 +101,7 @@
                </button>
                   <a class="navbar-brand" href="index.html"></a>
           </div>
-					
+
 					<div class="navbar-collapse collapse pull-left">
 						<ul class="nav navbar-nav">
 							<li><a href="{{=URL('home','index')}}">{{=T('Home')}}</a></li>
@@ -154,12 +154,12 @@
 							<li><a href="https://www.fid4sa.de">FID4SA</a></li>
 							{{elif session.forced_language=='en':}}
 							<li><a href="https://www.fid4sa.de">FID4SA</a></li>
-							{{pass}}    
+							{{pass}}
 						</ul>
 					</div>
 
-	
-			
+
+
 					<div class="navbar-collapse collapse pull-right visible-lg hidden-md">
 						<ul class="nav navbar-nav">
 										<li class="social_media">
@@ -167,7 +167,7 @@
 												<map name="socialmap">
 													{{if request.url=='/': }}
 													{{request.url=request.url+myconf.take('web.application')}}
-													{{pass}}	
+													{{pass}}
 													<area shape="rect" coords="0,0,30,30" alt="fb" href="https://www.facebook.com/sharer/sharer.php?u={{=myconf.take('web.url')+request.url}}">
 													<area shape="rect" coords="30,0,60,30" alt="twitter" href="http://twitter.com/home?status={{=myconf.take('web.url')+request.url}}">
 													<area shape="rect" coords="60,0,90,30" alt="twitter" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{=myconf.take('web.url')+request.url}}">
@@ -177,16 +177,16 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="headerBild">
 		       <div class="container">
 				   <img alt="" id="hup-logo" src="{{=URL('static','images/press/paisley.png')}}" />
 			   </div>
 		   </div>
-		   
+
 	   </header>
-	   
-	   <section id="content">	       
+
+	   <section id="content">
 	       <div class="container">
 		        <div class="abstand" style="height:30px;"></div>
 		        {{block center}}
@@ -194,7 +194,7 @@
 				{{end}}
 	       </div>
 	   </section>
-	   
+
 	   <footer>
 			<div id="sub-footer">
 				<div class="container">
@@ -202,37 +202,37 @@
 						<div class="col-lg-12">
 							<div id="footer_logo_pkp" class="widget">
                 <a href="https://pkp.sfu.ca/" title="Homepage PKP - Public Knowledge Project"><img alt="Logo - PKP" src="{{=URL('static','/images/press/pkp_brand.png')}}" /></a>
-							</div>							 
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="row footer-flex">
-					{{if session.forced_language =='de': }}	        
-					  <div id="footer_logo_ub" class="widget col-sm-3 col-md-2"><a href="http://www.ub.uni-heidelberg.de" title="Homepage Universitätsbibliothek Heidelberg"><img alt="Logo - Universitätsbibliothek Heidelberg" src="/UBHD_OMPHASP/en/static/images/press/logo_ubhd.png"></a>
+					{{if session.forced_language =='de': }}
+					  <div id="footer_logo_ub" class="widget col-sm-3 col-md-2"><a href="http://www.ub.uni-heidelberg.de" title="Homepage Universitätsbibliothek Heidelberg"><img alt="Logo - Universitätsbibliothek Heidelberg" src="{{=URL('static','/images/press/logo_ubhd.png')}}"></a>
 					  </div>
-					  <div id="footer_logo_sai" class="widget col-sm-4 col-md-3"><a href="http://www.sai.uni-heidelberg.de/" title="Südasieninstitut"><img alt="Logo - Südasieninstitut der Universität Heidelberg" src="/UBHD_OMPHASP/en/static/images/press/logo_sai.png"></a>
+					  <div id="footer_logo_sai" class="widget col-sm-4 col-md-3"><a href="http://www.sai.uni-heidelberg.de/" title="Südasieninstitut"><img alt="Logo - Südasieninstitut der Universität Heidelberg" src="{{=URL('static','/images/press/logo_sai.png')}}"></a>
 					  </div>
-					  <div id="footer_logo_fid4sa" class="widget col-sm-4 col-md-3"><a href="https://www.fid4sa.de" title="Homepage FID4SA"><img alt="Logo - FID4SA" src="/UBHD_OMPHASP/en/static/images/press/logo_fid4SA_de.png"></a>
+					  <div id="footer_logo_fid4sa" class="widget col-sm-4 col-md-3"><a href="https://www.fid4sa.de" title="Homepage FID4SA"><img alt="Logo - FID4SA" src="{{=URL('static','/images/press/logo_fid4SA_de.png')}}"></a>
 					  </div>
-					   <div id="footer_logo_dfg" class="widget col-sm-4 col-md-3"><a href="http://www.dfg.de/" title="Homepage Deutsche Forschungsgemeinschaft"><img alt="Logo - CrossAsia" src="/UBHD_OMPHASP/en/static/images/press/logo_dfg_de.png"></a>
+					   <div id="footer_logo_dfg" class="widget col-sm-4 col-md-3"><a href="http://www.dfg.de/" title="Homepage Deutsche Forschungsgemeinschaft"><img alt="Logo - CrossAsia" src="{{=URL('static','/images/press/logo_dfg_de.png')}}"></a>
 					  </div>
-			
-					{{elif session.forced_language =='en': }}   
-					   <div id="footer_logo_ub" class="widget col-sm-3 col-md-2"><a href="http://www.ub.uni-heidelberg.de" title="Homepage Universitätsbibliothek Heidelberg"><img alt="Logo - Universitätsbibliothek Heidelberg" src="/UBHD_OMPHASP/en/static/images/press/logo_ubhd.png"></a>
+
+					{{elif session.forced_language =='en': }}
+					   <div id="footer_logo_ub" class="widget col-sm-3 col-md-2"><a href="http://www.ub.uni-heidelberg.de" title="Homepage Universitätsbibliothek Heidelberg"><img alt="Logo - Universitätsbibliothek Heidelberg" src="{{=URL('static','/images/press/logo_ubhd.png')}}"></a>
 					   </div>
-					   <div id="footer_logo_sai" class="widget col-sm-4 col-md-3"><a href="http://www.sai.uni-heidelberg.de/" title="Südasieninstitut"><img alt="Logo - Südasieninstitut der Universität Heidelberg" src="/UBHD_OMPHASP/en/static/images/press/logo_sai.png"></a>
+					   <div id="footer_logo_sai" class="widget col-sm-4 col-md-3"><a href="http://www.sai.uni-heidelberg.de/" title="Südasieninstitut"><img alt="Logo - Südasieninstitut der Universität Heidelberg" src="{{=URL('static','/images/press/logo_sai.png')}}"></a>
 					   </div>
-					   <div id="footer_logo_fid4sa" class="widget col-sm-4 col-md-3"><a href="https://www.fid4sa.de" title="Homepage FID4SA"><img alt="Logo - FID4SA" src="/UBHD_OMPHASP/en/static/images/press/logo_fid4SA_en.png"></a>
+					   <div id="footer_logo_fid4sa" class="widget col-sm-4 col-md-3"><a href="https://www.fid4sa.de" title="Homepage FID4SA"><img alt="Logo - FID4SA" src="{{=URL('static','/images/press/logo_fid4SA_en.png')}}"></a>
 					   </div>
-						<div id="footer_logo_dfg" class="widget col-sm-4 col-md-3"><a href="http://www.dfg.de/" title="Homepage Deutsche Forschungsgemeinschaft"><img alt="Logo - CrossAsia" src="/UBHD_OMPHASP/en/static/images/press/logo_dfg_en.png"></a>
-						</div>           
-					  
-					{{pass}}           
-			
+						<div id="footer_logo_dfg" class="widget col-sm-4 col-md-3"><a href="http://www.dfg.de/" title="Homepage Deutsche Forschungsgemeinschaft"><img alt="Logo - CrossAsia" src="{{=URL('static','/images/press/logo_dfg_en.png')}}"></a>
+						</div>
+
+					{{pass}}
+
 				</div>
-			</div>				
+			</div>
 			<!--<div class="container">
 				<div class="row">
 					<div class="footer_logo_col">
@@ -246,16 +246,16 @@
 
 
 					<div class="footer_logo_col">
-		{{if session.forced_language =='de': }}						
+		{{if session.forced_language =='de': }}
 					   <div id="footer_logo_fid4sa" class="widget"><a href="https://www.fid4sa.de" title="Homepage FID4SA"><img alt="Logo - FID4SA" src="{{=URL('static','/images/press/logo_fid4SA_de.png')}}" /></a></div>
 
 		{{elif session.forced_language =='en': }}
 						<div id="footer_logo_fid4sa" class="widget"><a href="https://www.fid4sa.de" title="Homepage FID4SA"><img alt="Logo - FID4SA" src="{{=URL('static','/images/press/logo_fid4SA_en.png')}}" /></a></div>
 		{{pass}}
-					</div>	
+					</div>
 
-	</div>	
-		
+	</div>
+
 					<div class="footer_logo_col">
 					   <div id="footer_logo_dfg" class="widget"><a href="http://www.dfg.de/" title="Homepage Deutsche Forschungsgemeinschaft">
 						   {{if session.forced_language=='de':}}
@@ -267,10 +267,10 @@
 					</div>
 				</div>-->
 
-			</div>	
+			</div>
 	   </footer>
 	</div>
-	
+
     <script src="{{=URL('static','js/bootstrap.min.js')}}"></script>
   </body>
 </html>
