@@ -9,11 +9,12 @@ from gluon.custom_import import track_changes
 settings = Storage()
 
 settings.migrate = True
-settings.title = 'CrossAsia eBooks'
+settings.title = 'Heidelberg Asian Studies Publishing - HASP'
+settings.short_title = 'HASP'
 settings.subtitle = ''
 settings.author_email = 'heiup@ub.uni-heidelberg.de'
-settings.keywords = 'CrossAsia E-Books, Universitätsbibliothek Heidelberg, Universität Heidelberg, digitales Publizieren, Open Access, omp, python, mysql, knv, onix, arthistoricum'
-settings.description = 'CrossAsia E-Books'
+settings.keywords = ''
+settings.description = 'Heidelberg Asian Studies Publishing (HASP) ist die Open-Access Publikationsplattform des FID4SA-Fachinformationsdienst Südasien. HASP veröffentlicht wissenschaftliche e-Books aus dem Bereich der Asienwissenschaften.'
 settings.layout_theme = 'Default'
 # settings.database_uri = 'sqlite://storage.sqlite'
 # settings.database_uri = 'mysql://omp-user:omp-password@localhost:3306/omptest'
