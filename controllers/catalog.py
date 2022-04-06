@@ -478,6 +478,17 @@ def book():
                                         press_settings.getLocalizedValue('publisher', ''), locale=locale,
                                         series_name=series_name, series_pos=submission.series_position,
                                         max_contrib=3, date_first_published=date_first_published)
+    if authors:
+        attribution = ompformat.formatContributors(authors, max_contributors=100, with_and=True)
+        additional_attribution = ompformat.formatAttribution(editors, [], translators, [])
+    elif editors:
+        suffix = T("(Eds.)") if len(editors) > 1 else T("(Ed.)")
+        attribution = "{} {}".format(ompformat.formatContributors(editors, max_contributors=100, with_and=True), suffix)
+        additional_attribution = ""
+    else:
+        title_attribution = ompformat.formatName(chapter_authors[0].settings)
+        attribution = ompformat.formatAttribution([], [], [], chapter_authors)
+        additional_attribution = ""
 
     response.title = "{} - {}".format(cleanTitle, settings.short_title if settings.short_title else settings.title)
 
