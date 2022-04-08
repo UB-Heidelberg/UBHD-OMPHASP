@@ -4,6 +4,7 @@ Copyright (c) 2015 Heidelberg University Library
 Distributed under the GNU GPL v3. For full terms see the file
 LICENSE.md
 '''
+import datetime
 from collections import defaultdict
 
 from ompdal import OMPDAL, OMPSettings, OMPItem, DOI_SETTING_NAME
@@ -349,7 +350,6 @@ def book():
         chapter_id = 0
 
     submission_settings = OMPSettings(ompdal.getSubmissionSettings(submission_id))
-    press_settings = OMPSettings(ompdal.getPressSettings(press.press_id))
 
     # Get chapters and chapter authors
     chapters = []
@@ -473,9 +473,17 @@ def book():
         series_subtitle = series.settings.getLocalizedValue('subtitle', locale)
         series_name = " – ".join([t for t in [series_title.strip(), series_subtitle] if t])
 
+    # Because of transition from CrossAsia eBooks to HASP we display the old publisher name for publications before 2022
+    if date_published > datetime.datetime(2022, 1, 1):
+        press_settings = OMPSettings(ompdal.getPressSettings(press.press_id))
+        press_name = press_settings.getLocalizedValue('publisher', '')
+        press_location = press_settings.getLocalizedValue('location', '')
+    else:
+        press_name = 'CrossAsia-eBooks'
+        press_location = 'Heidelberg ; Berlin'
     citation = ompformat.formatCitation(cleanTitle, subtitle, authors, editors, translators,
-                                        date_published, press_settings.getLocalizedValue('location', ''),
-                                        press_settings.getLocalizedValue('publisher', ''), locale=locale,
+                                        date_published, press_location,
+                                        press_name, locale=locale,
                                         series_name=series_name, series_pos=submission.series_position,
                                         max_contrib=3, date_first_published=date_first_published)
     if authors:
