@@ -450,9 +450,11 @@ def book():
     # submissions = sorted(submissions, key=lambda s: s.attributes['series_id'], reverse=True)
     pfs = digital_publication_formats + physical_publication_formats
     idntfrs = {}
-
+    pdf_isbn = ''
     for p in pfs:
         for i in p.associated_items['identification_codes'].as_list():
+            if i['code'] == 15:
+                pdf_isbn = i['value']
             idntfrs['{}.{}'.format(i['code'], p.settings.getLocalizedValue('name', locale))] = (
                 i['value'], i['code'], p.settings.getLocalizedValue('name', locale))
 
@@ -476,14 +478,14 @@ def book():
     # Because of transition from CrossAsia eBooks to HASP we display the old publisher name for publications before 2022
     if date_published > datetime.datetime(2022, 1, 1):
         press_settings = OMPSettings(ompdal.getPressSettings(press.press_id))
-        press_name = press_settings.getLocalizedValue('publisher', '')
+        publisher = press_settings.getLocalizedValue('publisher', '')
         press_location = press_settings.getLocalizedValue('location', '')
     else:
-        press_name = 'CrossAsia-eBooks'
+        publisher = 'CrossAsia-eBooks'
         press_location = 'Heidelberg ; Berlin'
     citation = ompformat.formatCitation(cleanTitle, subtitle, authors, editors, translators,
                                         date_published, press_location,
-                                        press_name, locale=locale,
+                                        publisher, locale=locale,
                                         series_name=series_name, series_pos=submission.series_position,
                                         max_contrib=3, date_first_published=date_first_published)
     if authors:
@@ -497,6 +499,30 @@ def book():
         title_attribution = ompformat.formatName(chapter_authors[0].settings)
         attribution = ompformat.formatAttribution([], [], [], chapter_authors)
         additional_attribution = ""
+
+    # Highwire Press Tags for Google Scholar inclusion
+    # See https://scholar.google.com/intl/de/scholar/inclusion.html#indexing
+    pdf_file = ompdal.getLatestRevisionOfFullBookFileByPublicationFormat(submission_id, pdf.publication_format_id)
+    pdf_url = myconf.take('web.url') + ompformat.downloadLink(pdf_file)
+    meta_title = cleanTitle
+    if subtitle:
+        meta_title = "{}: {}".format(meta_title, subtitle)
+
+    meta_tags = [
+        META(_name="gs_meta_revision", _content="1.1"),
+        META(_name="citation_title", _content=meta_title),
+        META(_name="citation_publication_date", _content=date_published.date().isoformat()),
+        META(_name="citation_abstract", _content=abstract),
+        META(_name="citation_pdf_url", _content=pdf_url),
+        META(_name="citation_publisher", _content=publisher)
+    ]
+    # TODO "citation_language" is missing, but currently language fields are not filled in correctly for some publications
+    meta_tags += [META(_name="citation_author", _content=ompformat.formatName(contrib.settings, locale=locale)) for contrib in
+                  contributors_by_id.values()]
+    if pdf_isbn:
+        meta_tags.append(META(_name="citation_isbn", _content=pdf_isbn))
+    if doi:
+        meta_tags.append(META(_name="citation_doi", _content=doi))
 
     response.title = "{} - {}".format(cleanTitle, settings.short_title if settings.short_title else settings.title)
 

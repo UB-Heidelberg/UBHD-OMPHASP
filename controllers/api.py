@@ -309,7 +309,10 @@ def oastatistik():
     db_submissions = db.submissions
     q = ((db_submissions.context_id == context_id) & (db_submissions.status == 3))
     submissions = db(q).select(db_submissions.submission_id, db_submissions.locale, orderby=(db_submissions.submission_id))
-    press_path = ompdal.getPress(context_id).get('path')
+
+    # Hardcoded path because of transition from CrossAsia eBook to HASp
+    # https://gitlab.ub.uni-heidelberg.de/wit/verlag-portale/-/issues/428
+    press_path = "xa"
 
     series_list = ompdal.getSeriesByPress(context_id)
 
