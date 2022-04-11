@@ -61,7 +61,11 @@
     </div>
              <div class="col-lg-3">
 		     <div id="infoBoxRechts">
+			 {{if session.forced_language =='de': }}
+			     	<p>Anfang 2022 wurde das Open Access Publikationsangebot des FID Asien – <strong>CrossAsia E-Publishing</strong> mit seinen Plattformen CrossAsia-eBooks und CrossAsia-eJournals – zu <strong>Heidelberg Asian Studies Publising (HASP)</strong> umbenannt. Unter neuem Namen setzen die Universitätsbibliothek Heidelberg und das Südasien-Institut ihre erfolgreichen Publikationsaktivitäten fort und bauen sie durch innovative neue Serviceangebote weiter aus.</p>
+			{{elif session.forced_language =='en': }}		
 					<p>At the beginning of 2022, the FID Asia's open access publishing service - <strong>CrossAsia E-Publishing</strong> with its platforms CrossAsia-eBooks and CrossAsia-eJournals - was renamed <strong>Heidelberg Asian Studies Publishing (HASP)</strong>. Under the new name, Heidelberg University Library and the South Asia Institute are continuing their successful publishing activities and expanding them through innovative new services.</p>
+			{{pass}}	
 				</div>	
               </div>
 
