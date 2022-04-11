@@ -1215,7 +1215,6 @@ footer .widget .flickr_badge {
 }
 footer .widget .flickr_badge img {
 	margin: 0 9px 20px 0;
-	class="divider"></li>
 }
 .flickr_badge img {
 	width: 50px;
@@ -1276,7 +1275,7 @@ ul.time-post li {
 ul.time-post li a img:hover {
 	opacity: 0.8;
 /* For IE 5-7 */
-	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+	filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=80)";
 /* For IE 8 8 */
 	-MS-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
@@ -1299,7 +1298,7 @@ ul.time-post li.time {
 	color: #919191;
 }
 .post-meta strong {
-	font-weight: 200px;
+	font-weight: 200;
 	color: #c7c7c7;
 }
 .item .text {
@@ -1463,13 +1462,9 @@ a.scrollup i:hover {
 	float: left;
 }
 .floatnone {
-n toggle_visibility(id) {
-	var e = document.getElementById(id);
-	if(e.style.display == 'block')      e.style.display = 'none';
-	else      e.style.display = 'block';
-}
 	float:none;
 }
+
 .aligncenter {
 	text-align: center;
 }
@@ -2151,4 +2146,9 @@ img {
 	margin-left: 0 !important;
 }
 		
+}
+
+/** Suchlayout  **/
+.navbar-form {
+	width: 200px;
 }
