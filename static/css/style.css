@@ -1366,7 +1366,7 @@ ul.social-network li {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 1.5em !important;	
+	margin-top: 1.5em !important;
 }
 
 
@@ -2001,7 +2001,7 @@ label[for="graphq-form-suchkriterium1"], label[for="graphq-form-suchkriterium2"]
     justify-content: center;
     margin-bottom: 1em;
     padding: 10px;
-    width: 71%;    
+    width: 71%;
 }
 
 .treffer-fieldset .form-inline:nth-of-type(1) {
@@ -2012,7 +2012,7 @@ label[for="graphq-form-suchkriterium1"], label[for="graphq-form-suchkriterium2"]
 label[for="inputSort"] {
     text-align: right;
     padding-right: 10px;
-}                
+}
 
 .treffer-fieldset > .btn-group {
     display: flex;
@@ -2034,7 +2034,7 @@ label[for="inputSort"] {
 
 .numFound {
     margin-bottom: 1em;
-}    
+}
 
 .hits {
     margin: 0
@@ -2051,7 +2051,7 @@ label[for="inputSort"] {
 .hits > li.goto_first_hit {
     cursor: pointer;
     text-align: right;
-} 
+}
 
 .hits > li.goto_first_hit::after {
     font-family: FontAwesome;
@@ -2060,7 +2060,7 @@ label[for="inputSort"] {
     font-style: normal;
     float: right;
     font-size: x-large;
-}     
+}
 
 .hits li.hit,
 .hierarchy.domain_heiup_uni-heidelberg_de li,
@@ -2070,12 +2070,12 @@ label[for="inputSort"] {
 li.goto_first_hit,
 .highlighting_meta_subject_txt li {
     list-style-type: none;
-} 
+}
 
 .hit img {
     position: absolute;
     width: 30%;
-    max-width: 100px !important; 
+    max-width: 100px !important;
     height: auto !important;
 }
 
@@ -2092,7 +2092,7 @@ li.goto_first_hit,
 
 
 .hierarchy.domain_heiup_uni-heidelberg_de li {
-    margin-left: 20px;        
+    margin-left: 20px;
     text-indent: -20px;
 }
 
@@ -2108,7 +2108,7 @@ li.goto_first_hit,
     font-size: 0.9em;
     line-height: 1.3em;
     margin-bottom: 0.3em;
-    margin-left: 15px;        
+    margin-left: 15px;
     text-indent: -20px;
 }
 
@@ -2145,7 +2145,7 @@ li.type_monograph a::before {
 
 
 @media screen and (max-width:767px) {
- 
+
 #graphq-form input {
     width: 100%;
  }
@@ -2153,7 +2153,7 @@ li.type_monograph a::before {
 .treffer-fieldset {
     width: 85%;
 }
- 
+
 }
 
 @media screen and (max-width:450px) {
@@ -2186,7 +2186,7 @@ li.hit > img {
 
 .facet {
     white-space: nowrap;
-}    
+}
 
 .facet_title {
     display: inline-block;
@@ -2196,7 +2196,7 @@ li.hit > img {
     margin-bottom: 0.3em;
     margin-top: 1em;
     padding-left: 2px;
-}    
+}
 
 .facet_checkbox {
     margin-right: 5px !important;
@@ -2206,7 +2206,7 @@ li.hit > img {
     align-items: center;
     cursor: pointer;
     display: flex;
-    font-size: 0.85em;    
+    font-size: 0.85em;
     justify-content: space-between;
     margin-bottom: 0.5em;
     padding: 1px;
@@ -2221,7 +2221,7 @@ li.hit > img {
     line-height: 1.1em;
 }
 
-.facet_count {  
+.facet_count {
     padding-left: 2px;
 }
 
@@ -2420,10 +2420,11 @@ img {
 	float: left !important;
 	margin-left: 0 !important;
 }
-		
+
 }
 
 /** Suchlayout  **/
 .navbar-form {
-	width: 200px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }

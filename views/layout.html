@@ -70,17 +70,28 @@
 		       <div class="container">
 						<ul class="nav nav-pills pull-right">
 							<li><a href="{{=URL('contact','index')}}" style="padding-right: 0;">{{=T('Contact')}}</a></li>
-                      {{if session.forced_language =='de': }}
-              <li><a href="https://www.uni-heidelberg.de/datenschutzerklaerung_web.html" style="padding-right: 0;">{{=T('Privacy Notice')}}</a></li>
-                      {{elif session.forced_language =='en': }}
-              <li><a href="https://www.uni-heidelberg.de/privacypolicy_web.html" style="padding-right: 0;">{{=T('Privacy Notice')}}</a></li>
-            {{pass}}
+							{{if session.forced_language =='de': }}
+							<li><a href="https://www.uni-heidelberg.de/datenschutzerklaerung_web.html" style="padding-right: 0;">{{=T('Privacy Notice')}}</a></li>
+							{{elif session.forced_language =='en': }}
+							<li><a href="https://www.uni-heidelberg.de/privacypolicy_web.html" style="padding-right: 0;">{{=T('Privacy Notice')}}</a></li>
+							{{pass}}
 							<li><a href="{{=URL('contact','imprint')}}" style="padding-right: 0;">{{=T('Legal Notice')}}</a></li>
-							 {{if session.forced_language=='en':}}
+							{{if session.forced_language=='en':}}
 							<li><a href="{{=request.url}}?lang=de" style="padding-left: 10px;">DE</a></li>
 							{{elif session.forced_language=='de':}}
 							<li><a href="{{=request.url}}?lang=en" style="padding-left: 10px;">EN</a></li>
 							{{pass}}
+							<li class="social_media">
+								<img id="nav-social-media" src="{{=URL('static','images/press/social-media-icons.png')}}" alt="Planets" usemap="#socialmap">
+								<map name="socialmap">
+									{{if request.url=='/': }}
+									{{request.url=request.url+myconf.take('web.application')}}
+									{{pass}}
+									<area shape="rect" coords="0,0,30,30" alt="fb" href="https://www.facebook.com/sharer/sharer.php?u={{=myconf.take('web.url')+request.url}}">
+									<area shape="rect" coords="30,0,60,30" alt="twitter" href="http://twitter.com/home?status={{=myconf.take('web.url')+request.url}}">
+									<area shape="rect" coords="60,0,90,30" alt="twitter" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{=myconf.take('web.url')+request.url}}">
+								</map>
+							</li>
 						</ul>
 			   </div>
 		   </div>
@@ -88,8 +99,8 @@
 		   <div id="headerLogo" class="print-url">
 			   <div class="container">
 					<a href="{{=URL('home','index')}}" title="Homepage HASP">
-          <img alt="" id="heiup-logo" class="screen" src="{{=URL('static','images/press/schriftzug_header.png')}}" /></a>
-					<img alt="" id="heiup-logo-print" class="print" src="{{=URL('static','images/press/schriftzug_header.png')}}" />
+						<img alt="" id="heiup-logo" class="screen" src="{{=URL('static','images/press/schriftzug_header.png')}}" /></a>
+				   <img alt="" id="heiup-logo-print" class="print" src="{{=URL('static','images/press/schriftzug_header.png')}}" />
 			   </div>
            </div>
 
@@ -149,12 +160,6 @@
 										<li><a href="{{=URL('publishing','rights_and_licences')}}">{{=T('Rights and Licences')}} </a></li>
 									</ul>
 							</li>
-
-							{{if session.forced_language=='de':}}
-							<li><a href="https://www.fid4sa.de">FID4SA</a></li>
-							{{elif session.forced_language=='en':}}
-							<li><a href="https://www.fid4sa.de">FID4SA</a></li>
-							{{pass}}
 						</ul>
 					</div>
 					<!-- BEGIN Searchbox -->
@@ -176,17 +181,7 @@
 
 					<div class="navbar-collapse collapse pull-right visible-lg hidden-md">
 						<ul class="nav navbar-nav">
-										<li class="social_media">
-											<img id="nav-social-media" src="{{=URL('static','images/press/social-media-icons.png')}}" alt="Planets" usemap="#socialmap">
-												<map name="socialmap">
-													{{if request.url=='/': }}
-													{{request.url=request.url+myconf.take('web.application')}}
-													{{pass}}
-													<area shape="rect" coords="0,0,30,30" alt="fb" href="https://www.facebook.com/sharer/sharer.php?u={{=myconf.take('web.url')+request.url}}">
-													<area shape="rect" coords="30,0,60,30" alt="twitter" href="http://twitter.com/home?status={{=myconf.take('web.url')+request.url}}">
-													<area shape="rect" coords="60,0,90,30" alt="twitter" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{=myconf.take('web.url')+request.url}}">
-												</map>
-										</li>
+
 						</ul>
 					</div>
 				</div>
