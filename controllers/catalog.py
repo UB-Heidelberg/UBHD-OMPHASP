@@ -502,8 +502,6 @@ def book():
 
     # Highwire Press Tags for Google Scholar inclusion
     # See https://scholar.google.com/intl/de/scholar/inclusion.html#indexing
-    pdf_file = ompdal.getLatestRevisionOfFullBookFileByPublicationFormat(submission_id, pdf.publication_format_id)
-    pdf_url = myconf.take('web.url') + ompformat.downloadLink(pdf_file)
     meta_title = cleanTitle
     if subtitle:
         meta_title = "{}: {}".format(meta_title, subtitle)
@@ -513,9 +511,13 @@ def book():
         META(_name="citation_title", _content=meta_title),
         META(_name="citation_publication_date", _content=date_published.date().isoformat()),
         META(_name="citation_abstract", _content=abstract),
-        META(_name="citation_pdf_url", _content=pdf_url),
         META(_name="citation_publisher", _content=publisher)
     ]
+    pdf_file = ompdal.getLatestRevisionOfFullBookFileByPublicationFormat(submission_id, pdf.publication_format_id)
+    # Not every book has a full text pdf
+    if pdf_file:
+        meta_tags.append(META(_name="citation_pdf_url", _content=(
+                myconf.take('web.url') + ompformat.downloadLink(pdf_file))))
     # TODO "citation_language" is missing, but currently language fields are not filled in correctly for some publications
     meta_tags += [META(_name="citation_author", _content=ompformat.formatName(contrib.settings, locale=locale)) for contrib in
                   contributors_by_id.values()]
