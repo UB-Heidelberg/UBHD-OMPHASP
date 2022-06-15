@@ -2278,10 +2278,8 @@ li.hit > img {
 }
 #footer_logo_ub img {
 	max-width: 150px;
-    margin-bottom: 2em;
 }
 #footer_logo_sai img {
-	margin-top: 5%;
         max-width: 180px;
 }
 #footer_logo_dfg img {
@@ -2291,9 +2289,9 @@ li.hit > img {
 }
 
 #footer_logo_fid4sa img {
-	max-width: 170px;
-	margin-top:5%;
+	max-height: 65px;
 }
+
 #footer_logo_pkp {
 	margin: 1em;
 	float: right;
