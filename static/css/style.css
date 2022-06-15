@@ -2277,6 +2277,12 @@ li.hit > img {
 	float: left;
 	padding-top: 1em;
 }
+
+#footer_logo_ub > a {
+    display: block;
+    margin-bottom: 2em;
+}
+
 #footer_logo_ub img {
 	max-width: 150px;
 }
