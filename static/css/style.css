@@ -1643,6 +1643,12 @@ footer .col-lg-1, footer .col-lg-2, footer .col-lg-3, footer .col-lg-4, footer .
 	margin-bottom: 20px;
 }
 }
+
+@media (max-width:480px) {
+.footer-flex {
+	justify-content: center;
+}
+
 @media (max-width:480px) {
 .bottom-article a.pull-right {
 	float: left;
@@ -2352,6 +2358,13 @@ ul.footer-nav li {
 .print {
 	display: none;
 }
+
+@media (max-width:520px) {
+.footer-flex {
+	height: auto !important;
+}
+}
+
 @media (max-width:1199px) {
 .box-gray {
 	height: auto !important;
