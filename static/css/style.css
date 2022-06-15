@@ -1643,12 +1643,6 @@ footer .col-lg-1, footer .col-lg-2, footer .col-lg-3, footer .col-lg-4, footer .
 	margin-bottom: 20px;
 }
 }
-
-@media (max-width:480px) {
-.footer-flex {
-	justify-content: center;
-}
-
 @media (max-width:480px) {
 .bottom-article a.pull-right {
 	float: left;
@@ -1726,7 +1720,7 @@ footer #sub-footer .container .col-lg-12 .row .col-lg-3 img {
 	width: 100% !important;
 }
 }
-/*Anpassungen WWW Heidelberg*/
+
 #nav-social-media {
 	height: 30px;
 	margin-right: 15px;
@@ -2297,14 +2291,12 @@ li.hit > img {
 }
 #footer_logo_dfg img {
 	max-width: 230px;
-    margin-bottom: 2em;
-    
+    margin-bottom: 2em;   
 }
 
 #footer_logo_fid4sa img {
 	max-height: 65px;
     margin-bottom: 2em;
-
 }
 
 #footer_logo_pkp {
@@ -2358,13 +2350,6 @@ ul.footer-nav li {
 .print {
 	display: none;
 }
-
-@media (max-width:520px) {
-.footer-flex {
-	height: auto !important;
-}
-}
-
 @media (max-width:1199px) {
 .box-gray {
 	height: auto !important;
@@ -2386,6 +2371,7 @@ ul.footer-nav li {
 	margin-left: 10px;
 }
 }
+
 @media print {
 .print {
 	display: block;
@@ -2404,7 +2390,7 @@ ul.footer-nav li {
 }
 .print-url::after {
 	color: #656565 !important;
-	content: "http://crossasia-books.ub.uni-heidelberg.de/xasia";
+	content: "https://hasp.ub.uni-heidelberg.de";
 	float: right;
 	font-size: 9pt;
 }
@@ -2424,6 +2410,7 @@ img {
 	margin-bottom: 0;
 }
 }
+
 @media (max-width:1150px) {
 .footer_logo_col {
 	width: 100%;
