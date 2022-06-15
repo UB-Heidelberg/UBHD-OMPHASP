@@ -2278,7 +2278,7 @@ li.hit > img {
 	padding-top: 1em;
 }
 
-#footer-flex > a {
+#footer-flex > div > a {
     display: block;
     margin-bottom: 2em;
 }
