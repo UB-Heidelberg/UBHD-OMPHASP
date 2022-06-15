@@ -1363,6 +1363,7 @@ ul.social-network li {
 }
 
 .footer-flex {
+    align-items: baseline;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -2284,7 +2285,6 @@ li.hit > img {
 }
 #footer_logo_dfg img {
 	padding-right: 0px;
-	margin-top: 7%;
 	max-width: 230px;
 }
 
