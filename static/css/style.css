@@ -1366,7 +1366,7 @@ ul.social-network li {
     align-items: baseline;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	margin-top: 1.5em !important;
 }
 
