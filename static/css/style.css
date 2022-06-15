@@ -2278,6 +2278,7 @@ li.hit > img {
 }
 #footer_logo_ub img {
 	max-width: 150px;
+    margin-bottom: 2em;
 }
 #footer_logo_sai img {
 	margin-top: 5%;
@@ -2290,7 +2291,7 @@ li.hit > img {
 }
 
 #footer_logo_fid4sa img {
-	max-width: 200px;
+	max-width: 180px;
 	margin-top:5%;
 }
 #footer_logo_pkp {
