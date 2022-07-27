@@ -1337,15 +1337,16 @@ ul.social-network li {
 	display: inline;
 	margin: 0 5px;
 }
+
 #sub-footer {
-	text-shadow: none;
-	color: #a39b94;
-	padding: 0;
-	padding-top: 0px;
 	background-color: transparent !important;
+	color: #a39b94;
+	text-shadow: none;
+    
 }
 #sub-footer .container {
 	border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
 }
 #sub-footer p {
 	margin: 0;
@@ -1354,6 +1355,9 @@ ul.social-network li {
 #sub-footer span {
 	color: #a39b94;
 }
+
+
+
 .copyright {
 	text-align: left;
 	font-size: 12px;
@@ -1807,7 +1811,7 @@ footer #sub-footer .container .col-lg-12 .row .col-lg-3 {
 	float: left;
 }
 #footer_logo_pkp {
-	margin-top: 1em !important;
+	margin-bottom: 1em !important;
 }
 }
 .flex-caption {
