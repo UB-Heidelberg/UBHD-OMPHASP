@@ -231,10 +231,10 @@ select.selectmenu {
 }
 .navbar-collapse.collapse {max-height:100%;}
 /* ===================================8. Section:Content==================================== */
-.row {
+/*.row {
 	margin: 0px -10px;
     margin-bottom: 30px;
-}
+}*/
 
 
 .news_row {
@@ -1678,10 +1678,10 @@ ul.portfolio li article a i {
 	display: block;
 	margin-bottom: 0.2em;
 }
-.row {
+/*.row {
 	padding-left: 15px;
 	padding-right: 15px;
-}
+}*/
 .news-row {
 	padding-left: 30px !important;
 	padding-right: 30px !important;
