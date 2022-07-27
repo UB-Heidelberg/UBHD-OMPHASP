@@ -1340,23 +1340,12 @@ ul.social-network li {
 
 #sub-footer {
 	background-color: transparent !important;
+	border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
 	color: #a39b94;
 	text-shadow: none;
     
 }
-#sub-footer .container {
-	border-bottom: 1px solid #ddd;
-    padding-bottom: 1rem;
-}
-#sub-footer p {
-	margin: 0;
-	padding: 0;
-}
-#sub-footer span {
-	color: #a39b94;
-}
-
-
 
 .copyright {
 	text-align: left;
@@ -1707,9 +1696,9 @@ ul.portfolio li article a i {
 .subtitle_volumes {
 	margin-left: 0.5em;
 }
-footer #sub-footer .container .col-lg-12 .row .col-lg-3 img {
+/*footer #sub-footer .container .col-lg-12 .row .col-lg-3 img {
 	margin-left: 20%;
-}
+}*/
 #headerBild {
 	display: none;
 }
