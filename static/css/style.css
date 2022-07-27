@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #content .container {
+    padding-top: 4rem;
 	width: 100%;
 }
 /*#wrapper {
@@ -1342,6 +1343,7 @@ ul.social-network li {
 	background-color: transparent !important;
 	border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;
+    padding-top: 3rem;
 	color: #a39b94;
 	text-shadow: none;  
 }
