@@ -248,9 +248,9 @@ select.selectmenu {
 	height: auto;
 }
 
-.news-row {
+/*.news-row {
 	margin: 0 -30px 20px -30px;
-}
+}*/
 .box_logo {
 	float: left;
 	margin-right: 1em;
@@ -1682,10 +1682,10 @@ ul.portfolio li article a i {
 	padding-left: 15px;
 	padding-right: 15px;
 }*/
-.news-row {
+/*.news-row {
 	padding-left: 30px !important;
 	padding-right: 30px !important;
-}
+}*/
 .news-row .col-lg-12 .row .col-lg-3 {
 	margin-bottom: 0.5em;
 }
