@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* ===================================2. layout==================================== */
 .container {
-	padding: 0 20px 0 20px;
+	padding: 2rem 20px 0 20px;
 	position: relative;
 	width: 88.571em;
 	max-width: 88.571em;
@@ -53,11 +53,11 @@ h1, h2, h3, h4, h5, h6 {
 #content .container {
 	width: 100%;
 }
-#wrapper {
+/*#wrapper {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-}
+}*/
 /* ===================================3. Responsive media==================================== */
 .video-container, .map-container, .embed-container {
 	position: relative;
@@ -1343,8 +1343,7 @@ ul.social-network li {
 	border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;
 	color: #a39b94;
-	text-shadow: none;
-    
+	text-shadow: none;  
 }
 
 .copyright {
@@ -1811,9 +1810,7 @@ footer #sub-footer .container .col-lg-12 .row .col-lg-3 {
 	text-transform: none;
 }
 /*** Kopfbereich ***/
-header {
-	margin-top: 0em;
-}
+
 /*header .navbar-collapse ul.navbar-nav {
 	float: left;
 }
