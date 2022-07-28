@@ -1657,7 +1657,7 @@ ul.portfolio li article a i {
 	height: 20px;
 	font-size: 14px;
 }
-.container, .col-lg-9, /* #boxAktuelles */ {
+.container,  /* .col-lg-9, #boxAktuelles */ {
 	width: 100% !important;
 }
 .col-lg-12, footer {
