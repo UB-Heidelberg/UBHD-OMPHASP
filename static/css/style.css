@@ -29,6 +29,7 @@ a:active {
 .clear {
 	clear: both;
 }
+.pkp_structure_main h2,
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	line-height: 1.1em;
@@ -58,6 +59,12 @@ h1, h2, h3, h4, h5, h6 {
 #main.container {
     padding-top: 0;
 }
+
+.pkp_structure_main {
+    padding-top: 0;
+}
+
+
 /*#wrapper {
 	width: 100%;
 	margin: 0;
