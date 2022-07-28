@@ -236,10 +236,9 @@ select.selectmenu {
 }
 .navbar-collapse.collapse {max-height:100%;}
 /* ===================================8. Section:Content==================================== */
-/*.row {
-	margin: 0px -10px;
-    margin-bottom: 30px;
-}*/
+.row {
+ margin-bottom: 30px;
+}
 
 
 .news_row {
