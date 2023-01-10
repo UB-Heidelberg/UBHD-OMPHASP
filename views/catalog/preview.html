@@ -173,6 +173,42 @@
 			  </div> 
 		</div>
 
+		<div class="container book_container">	
+			<div class="row" id="gabler">
+			  <div class="alignleft" style="height: auto;">
+				<div class="col-lg-2">
+					<article>
+						<div class="post-image">
+							{{=IMG(_src=URL('static','images/catalog/cover_robinson.jpg'),_style='width:230px')}}
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-9">
+					<article>
+						<div class="post-heading">
+							<b>Mette Gabler<br />
+								Creating Slogans for Social Change: An Inquiry into Advertising, Gender Imagery and the Politics of Change in Urban India</b><br>
+								<em>Media and Cultural Studies ; 4</em><br>
+							  {{if session.forced_language =='de': }}								  
+							  <p>Welche Rolle Medieninhalte in Prozessen des Wandels einnehmen, ist eine fortlaufende und vielschichtige Diskussion. Darin nehmen Werbung und Geschlechterverhältnisse eine besondere Position ein. Im Kontext der werbeschaffenden Institutionen in Indien befasst sich dieses Buch mit dem Verständnis von sozialem Wandel in den frühen 2010er Jahren. Anhand der Produktion von Werbung mit kommerziellen und/oder sozialen Inhalten werden die Perspektiven der Werbeschaffenden hervorgehoben. Die Analyse präsentiert die Lebensumstände und Diskurse, die diese umgeben. Dabei werden die Komplexität und Verschränkungen der Werbewelten dargestellt, und Dynamiken von Gender, Medien und Wandel diskutiert.</p>
+							  {{elif session.forced_language =='en': }}
+							  <p>What role media content plays in processes of change is an ongoing and multi-layered discussion. Therein, advertising and gender have an extraordinary position. In the context of advertising production in urban India, this book deals with the understanding of social change in the early 2010s. Through an inquiry of the production of advertising created for commercial and/or social purposes, the perceptions of advertising producers are highlighted. The analysis presents the realities of the producers as well as debates surrounding the creation processes. Thereby, the complexities and intertwining of advertising are uncovered, while dynamics of gender, media, and change are discussed.</p>
+							  {{pass}}
+															  
+						</div>
+						<p>
+						  {{if session.forced_language =='de': }}
+							Erscheint im Sommer 2023
+							{{elif session.forced_language =='en': }}
+							Forthcoming in Summer 2023
+							{{pass}}
+						</p>
+					</article>
+				</div>
+			  </div>
+			</div> 
+	  </div>		
+
     <!--<div class="container book_container">    
 		<div class="row">
 			<div  id="vorschau_reihen" class="col-lg-12">
