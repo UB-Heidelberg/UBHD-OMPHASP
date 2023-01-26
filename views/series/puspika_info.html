@@ -1,0 +1,91 @@
+{{extend 'layout.html'}}
+
+<div class="row">
+    <div class="col-lg-12">
+	    <div class="row">
+			<div class="col-lg-12">
+				<h3>  {{if session.forced_language =='de': }}
+					Puṣpikā: Tracing Ancient India Through Texts and Traditions: Contributions to Current Research in Indology  
+					{{elif session.forced_language =='en': }}
+					Puṣpikā: Tracing Ancient India Through Texts and Traditions: Contributions to Current Research in Indology
+				{{pass}}
+				</h3>
+			</div>	
+		</div>
+		
+		<div class="row">
+			{{if session.forced_language =='de': }}
+			<div class="col-lg-9">
+				<p>In der Serie Puṣpikā – Tracing Ancient India through Texts and Traditions: Contributions to Current Research in Indology werden die Proceedings des International Indology Graduate Research Symposium (IIGRS) veröffentlicht. Puṣpikā ist eine durch Peer-Review qualitätsgesicherte Serie, die dem akademischen Nachwuchs eine Plattform bietet, auf welcher er seine Forschungsergebnisse mit dem Schwerpunkt „Kulturen des vormodernen Südasiens“ präsentieren kann.
+				</p>
+				<div class="widget">
+							<ul class="tags">
+
+								<li>
+
+								   <p><a href="{{=URL('catalog', 'series/puspika')}}">{{=T('Volumes')}}</a></p>
+
+								</li>
+
+							</ul>
+				</div> 
+			</div> 		
+			
+
+			<div class="col-lg-3">
+				<div id="infoBoxRechts">
+					<p>{{=IMG(_src=URL('static','images/series/iigrs_logo.png'),_width='230px')}}</p>
+					<p><b>Herausgeber</b></p>
+					<ul>
+						<li>Giovanni Ciotti (University of Hamburg)</li>
+						<li>Robert Leach (University of Zurich)</li>
+						<li>Nina Mirnig (IKGA, Vienna)</li>
+						<li>Péter-Dániel Szántó (University of Leiden)</li>
+						<li>Lidia Wojtczak (SOAS University of London)</li>
+					</ul>
+					<p><b>Kontakt</b></p>
+					<p><a href="iigrsuk@googlemail.com" title="E-Mail schicken an die Herausgeber:innen">iigrsuk@googlemail.com</a></p>
+				</div>
+		</div>
+
+			<div class="col-lg-3">
+				
+
+			</div>
+			{{elif session.forced_language =='en': }}
+			<div class="col-lg-9">
+				<p>In the series Puṣpikā – Tracing Ancient India through Texts and Traditions: Contributions to Current Research in Indology, the proceedings of the International Indology Graduate Research Symposium (IIGRS) are published. Puṣpikā is a peer-reviewed series that provides early-career scholars with a platform to share the results of their research on pre-modern South Asian cultures.
+				</p>
+				<div class="widget">
+							<ul class="tags">
+
+								<li>
+								   <p><a href="{{=URL('catalog', 'series/puspika')}}">{{=T('Volumes')}}</a></p>
+								</li>
+
+							</ul>
+				</div>
+			</div> 		
+			
+			<div class="col-lg-3">
+				<div id="infoBoxRechts">
+					<p>{{=IMG(_src=URL('static','images/series/iigrs_logo.png'),_width='230px')}}</p>
+					<p><b>Editorial Board</b></p>
+					<ul>
+						<li>Giovanni Ciotti (University of Hamburg)</li>
+						<li>Robert Leach (University of Zurich)</li>
+						<li>Nina Mirnig (IKGA, Vienna)</li>
+						<li>Péter-Dániel Szántó (University of Leiden)</li>
+						<li>Lidia Wojtczak (SOAS University of London)</li>
+					</ul>
+					<p><b>Contact</b></p>
+					<p><a href="iigrsuk@googlemail.com" title="Send email to the editorial board">iigrsuk@googlemail.com</a></p>
+
+				</div>
+			</div>
+			{{pass}}
+
+		</div>
+    </div>
+</div>
+
