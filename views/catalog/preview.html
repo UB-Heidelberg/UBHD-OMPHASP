@@ -169,6 +169,41 @@
 	  </div>		
 
 
+	  <div class="container book_container">	
+		<div class="row" id="gabler">
+		  <div class="alignleft" style="height: auto;">
+			<div class="col-lg-2">
+				<article>
+					<div class="post-image">
+						{{=IMG(_src=URL('static','images/catalog/cover_gabler.jpg'),_style='width:230px')}}
+					</div>
+				</article>
+			</div>
+			<div class="col-lg-9">
+				<article>
+					<div class="post-heading">
+						<b>Frances Anke Niebuhr<br />
+							Dhārī Devī, Goddess of the Floods: Development, Disaster and the Transitions of a Place of Worship</b><br>
+						  {{if session.forced_language =='de': }}								  
+						  <p>Der Werdegang des Dhārī Devī Tempels versinnbildlicht die Vorstellung von Katastrophen als Wendepunkte. Insbesondere Flutdesaster begleiteten Transformationsprozesse des Ortes am Fluss Alaknanda im indischen Himalaya. Bereits eine Sturzflut im Jahre 1894 prägte maßgeblich den Platz und die Identität der Gottheit. Lokale Flutlegenden bekamen neue Aktualität mit der Planung eines Wasserkraftwerks in der näheren Umgebung. Sie wurden Teil der Debatten rund um das Bauprojekt, das eine Verlegung der sakralen Stätte erforderte. Vorliegende Fallstudie beleuchtet Flut-Diskurse und veranschaulicht ihren Einfluss auf ein Entwicklungsprojekt. Dazu belegt sie, wie vorangegangene Kontroversen die öffentliche Deutung zweier Flutdesaster in 2012 und speziell des „Himalaya Tsunamis“ in 2013 formten.</p>
+						  {{elif session.forced_language =='en': }}
+						  <p>The trajectory of the Dhārī Devī Temple epitomises the idea of catastrophes as watersheds. In particular, flood disasters have accompanied transformation processes of the site located on Alaknanda River in the Indian Himalayas. As early as 1894, a flash flood had a significant impact on the site and the identity of the deity. Local flood legends gained new topicality with the planning of a hydroelectric power plant in the vicinity. They became part of debates surrounding the construction scheme that required the relocation of the sacred site. This case study explores flood discourses and illuminates their influence on a development project. It further demonstrates how previous controversies framed the public interpretation of two flood disasters in 2012 and specifically of the &ldquo;Himalayan Tsunami&rdquo; in 2013.</p>
+						  {{pass}}
+														  
+					</div>
+					<p>
+					  {{if session.forced_language =='de': }}
+						Erscheint im Sommer 2023
+						{{elif session.forced_language =='en': }}
+						Forthcoming in Summer 2023
+						{{pass}}
+					</p>
+				</article>
+			</div>
+		  </div>
+		</div> 
+  </div>		  
+
     
 	</section>
 </div>
