@@ -10,26 +10,21 @@ $('.flexslider').flexslider();
 	<div class="col-lg-3">
 		<div class="box box-shadow">                                       
 		  <div class="box-gray aligncenter"><h4>{{=T('New Titles')}}</h4>
+	  {{=A(IMG(_src=URL(myconf.take('web.application'),'static','files/presses/4/monographs/1166/simple/cover.jpg'),_alt='',_style='width:145px', _class='bildrahmen'),_href=URL('catalog','book/1166'))}}
+			</div>
+			<div class="box-bottom"> {{=A(T('More'),_href=URL('catalog','book/1166'))}}</div>  
+		</div>
+	</div>
+
+	<div class="col-lg-3">
+		<div class="box box-shadow">                                       
+		  <div class="box-gray aligncenter"><h4>{{=T('New Titles')}}</h4>
 	  {{=A(IMG(_src=URL(myconf.take('web.application'),'static','files/presses/4/monographs/1151/simple/cover.jpg'),_alt='',_style='width:145px', _class='bildrahmen'),_href=URL('catalog','book/1151'))}}
 			</div>
 			<div class="box-bottom"> {{=A(T('More'),_href=URL('catalog','book/1151'))}}</div>  
 		</div>
 	</div>
 	
-	<div class="col-lg-3">
-		<div class="box box-shadow">                                       
-		  <div class="box-gray aligncenter"><h4>{{=T('New Titles')}}</h4>
-	  {{=A(IMG(_src=URL(myconf.take('web.application'),'static','files/presses/4/monographs/1133/simple/cover.jpg'),_alt='',_style='width:145px', _class='bildrahmen'),_href=URL('catalog','book/1133'))}}
-			</div>
-			<div class="box-bottom"> {{=A(T('More'),_href=URL('catalog','book/1133'))}}</div>  
-		</div>
-	</div>
-
-
-
-
-
-
 
 
 		  <div id="boxAktuelles" class="col-lg-6">
@@ -56,31 +51,31 @@ $('.flexslider').flexslider();
 	<div class="col-lg-3">
 		<div class="box box-shadow">                                       
 		  <div class="box-gray aligncenter"><h4>{{=T('New Titles')}}</h4>
+	  {{=A(IMG(_src=URL(myconf.take('web.application'),'static','files/presses/4/monographs/1133/simple/cover.jpg'),_alt='',_style='width:145px', _class='bildrahmen'),_href=URL('catalog','book/1133'))}}
+			</div>
+			<div class="box-bottom"> {{=A(T('More'),_href=URL('catalog','book/1133'))}}</div>  
+		</div>
+	</div>	
+	<div class="col-lg-3">
+		<div class="box box-shadow">                                       
+		  <div class="box-gray aligncenter"><h4>{{=T('New Titles')}}</h4>
 	  {{=A(IMG(_src=URL(myconf.take('web.application'),'static','files/presses/4/monographs/906/simple/cover.jpg'),_alt='',_style='width:145px', _class='bildrahmen'),_href=URL('catalog','book/906'))}}
 			</div>
 			<div class="box-bottom"> {{=A(T('More'),_href=URL('catalog','book/906'))}}</div>  
 		</div>
 	</div>
 	
-	<div class="col-lg-3">
-		<div class="box box-shadow">                                       
-		<div class="box-gray aligncenter"><h4>{{=T('New Titles')}}</h4>
-	{{=A(IMG(_src=URL(myconf.take('web.application'),'static','files/presses/4/monographs/919/simple/cover.jpg'),_alt='',_style='width:145px', _class='bildrahmen'),_href=URL('catalog','book/919'))}}
-			</div>
-			<div class="box-bottom"> {{=A(T('More'),_href=URL('catalog','book/919'))}}</div>  
-		</div>
-	</div>
-
-
-
-
-		
-       
+     
 
 			<div class="col-lg-6">
 				<div class="box box-shadow">
 				  <div class="box-gray aligncenter"><div class="box_logo">{{=IMG(_src=URL(myconf.take('web.application'),'static','images/home/logo_ebooks.png'),_alt='',_style='width:200px')}}</div>
-					<p class="boxText"> {{if session.forced_language =='de': }} Der FID4SA unterstützt Open Access als Publikationsmodell für die Verbreitung von Forschungsergebnissen. Mit HASP bieten wir Forschenden in den Asienwissenschaften weltweit die Möglichkeit, ihre Forschungsergebnisse elektronisch zu publizieren. Wir veröffentlichen wissenschaftliche Monographien, Sammelbände und Zeitschriften sowohl als Erstveröffentlichungen („goldener Weg“ des Open Access) als auch als Zweitveröffentlichungen („grüner Weg“ des Open Access). Zum Einsatz kommt die Open-Source-Software OMP des Public Knowledge Project (PKP). {{elif session.forced_language =='en': }} FID4SA supports Open Access as a publishing model for the dissemination and advancement of knowledge and learning. With HASP, we offer scholars in Asian Studies across the world an opportunity to publish their research results electronically. We publish scholarly monographs, edited volumes and journals according to both the gold OA model (books are available in OA immediately) and the green OA model (self-archiving). We use the open source software OMP from the Public Knowledge Project (PKP).{{pass}}</p>
+					<p class="boxText"> 
+						{{if session.forced_language =='de': }} 
+						Der FID4SA unterstützt Open Access als Publikationsmodell für die Verbreitung von Forschungsergebnissen. Mit HASP bieten wir Forschenden in den Asienwissenschaften weltweit die Möglichkeit, ihre Forschungsergebnisse elektronisch zu publizieren. Wir veröffentlichen wissenschaftliche Monographien, Sammelbände und Zeitschriften sowohl als Erstveröffentlichungen („goldener Weg“ des Open Access) als auch als Zweitveröffentlichungen („grüner Weg“ des Open Access). Zum Einsatz kommt die Open-Source-Software OMP des Public Knowledge Project (PKP). 
+						{{elif session.forced_language =='en': }}
+						FID4SA supports Open Access as a publishing model for the dissemination and advancement of knowledge and learning. With HASP, we offer scholars in Asian Studies across the world an opportunity to publish their research results electronically. We publish scholarly monographs, edited volumes and journals according to both the gold OA model (books are available in OA immediately) and the green OA model (self-archiving). We use the open source software OMP from the Public Knowledge Project (PKP).
+						{{pass}}</p>
 				  </div>
 				  <div class="box-bottom">&nbsp;</div>
 				</div>
