@@ -202,8 +202,42 @@
 			</div>
 		  </div>
 		</div> 
-  </div>		  
+  	 </div>		  
 
+	   <div class="container book_container">	
+		<div class="row" id="gabler">
+		  <div class="alignleft" style="height: auto;">
+			<div class="col-lg-2">
+				<article>
+					<div class="post-image">
+						{{=IMG(_src=URL('static','images/catalog/cover_schalmey.jpg'),_style='width:230px')}}
+					</div>
+				</article>
+			</div>
+			<div class="col-lg-9">
+				<article>
+					<div class="post-heading">
+						<b>Tilman Schalmey<br />
+							Computerlinguistische Datierung schriftsprachlicher chinesischer Texte</b><br>
+						  {{if session.forced_language =='de': }}								  
+						  Die chronologische Einordnung von Texten kann für Authentizitätsforschung und Exegese entscheidend sein. Die Datierung schriftsprachlicher chinesischer Quellen kann u. a. durch Imitation antiker Vorbilder und unklare Urheberschaft erschwert werden. Dieses Buch untersucht erstmals die Entwicklung und Anwendung computergestützter Methoden für die Datierung chinesischsprachiger Quellen. Dabei ermöglicht eine lexembasierte Methode, der stilistischen Rigidität der Schriftsprache zu begegnen und unterstützt damit die philologische Arbeit. Zudem werden der Sprachwandel, die Eignung digitaler Methoden für die Untersuchung Klassischer Texte und das Hanyu da cidian 漢語大詞典 als wichtige Datenquelle für lexikographische Datierung untersucht.</p>
+						  {{elif session.forced_language =='en': }}
+						  <p>The chronological classification of texts can be crucial for clarifying authenticity and interpretation. The dating of written Chinese sources can be made difficult due to imitation of antique models and unclear authorship. This book is the first to examine the development and application of computational methods for dating Chinese texts. It introduces a lexeme-based method that aims at counteracting the stylistic rigidity of the written language and aiding philological work. Moreover, this study examines language change, the general suitability of digital methods for the study of Classical Chinese texts and the Hanyu da cidian 漢語大詞典 as an important data source for lexicographic dating.</p>
+						  {{pass}}
+														  
+					</div>
+					<p>
+					  {{if session.forced_language =='de': }}
+						Erscheint im Sommer 2023
+						{{elif session.forced_language =='en': }}
+						Forthcoming in Summer 2023
+						{{pass}}
+					</p>
+				</article>
+			</div>
+		  </div>
+		</div> 
+  	 </div>	 
     
 	</section>
 </div>
