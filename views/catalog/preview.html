@@ -127,8 +127,44 @@
 		</div> 
   	 </div>		  
 
+
 	   <div class="container book_container">	
-		<div class="row" id="gabler">
+		<div class="row" id="lazzarotti">
+		  <div class="alignleft" style="height: auto;">
+			<div class="col-lg-2">
+				<article>
+					<div class="post-image">
+						{{=IMG(_src=URL('static','images/catalog/cover_schalmey.jpg'),_style='width:230px')}}
+					</div>
+				</article>
+			</div>
+			<div class="col-lg-9">
+				<article>
+					<div class="post-heading">
+						<b>Marco Lazzarotti<br />
+							God, Jesus and the Ancestors. An Ethnography of the Ancestors' Rites in the Taiwanese Catholic Church</b><br>
+						  {{if session.forced_language =='de': }}								  
+						  In diesem Buch beschreibt der Autor die Ahnenzeremonien, wie sie in der katholischen Kirche Taiwans praktiziert werden. Der Autor will zeigen, wie das chinesische symbolische Universum eine tiefe Übersetzung des &bdquo;neuen&ldquo; symbolischen Systems, das von der katholischen Doktrin repräsentiert wird, darstellt. Gleichzeitig hat das Bemühen der katholischen Kirche, die Botschaft des Evangeliums an die lokale Situation anzupassen, ein besonderes Phänomen hervorgebracht, das der Autor als kulturellen Dialog bezeichnet. Diese dialogische Beziehung ist der Prozess, den der Autor als Kultur definiert.</p>
+						  {{elif session.forced_language =='en': }}
+						  <p>In this book the author describes the Ancestors Ceremonies as practiced in the Taiwanese Catholic Church. The author's  point is to demonstrate how the Chinese symbolic universe made a deep translation of the "new" symbolic system represented by the Catholic doctrine. At the same time the effort of the Catholic Church in order to adapt the Gospel message to the local situation built up a particular phenomenon that the author defined as cultural dialogue. It is this dialogic relationship the process that the author defines as Culture.</p>
+						  {{pass}}
+														  
+					</div>
+					<p>
+					  {{if session.forced_language =='de': }}
+						Erscheint im Sommer 2023
+						{{elif session.forced_language =='en': }}
+						Forthcoming in Summer 2023
+						{{pass}}
+					</p>
+				</article>
+			</div>
+		  </div>
+		</div> 
+  	 </div>
+
+	   <div class="container book_container">	
+		<div class="row" id="schalmey">
 		  <div class="alignleft" style="height: auto;">
 			<div class="col-lg-2">
 				<article>
