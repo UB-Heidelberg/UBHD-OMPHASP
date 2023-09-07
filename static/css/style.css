@@ -313,11 +313,11 @@ select.selectmenu {
 	text-decoration: none;
 }
 
-.box-gray.alignleft > p > a[href^="https://doi.org/10.11588"] {
-  word-break: break-all;
-  width: 170px;
-  display: block;
-}
+.box-gray.alignleft a[href^="https://doi.org/10.17885"] {
+	word-break: break-all;
+	width: 170px;
+	display: block;
+  }
 /* ===================================9. Section:Bottom==================================== */
 #bottom {
 	background: #fcfcfc;
